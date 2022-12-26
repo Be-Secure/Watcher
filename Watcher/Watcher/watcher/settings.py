@@ -82,6 +82,7 @@ WORDS_OCCURRENCE = 10
 # Email Configuration
 EMAIL_FROM = os.environ.get('EMAIL_FROM', 'from@from.com')
 SMTP_SERVER = os.environ.get('SMTP_SERVER', 'localhost')
+EMAIL_SUBJECT_TAG_SITE_MONITORING = os.environ.get('EMAIL_SUBJECT_TAG_SITE_MONITORING', 'INCIDENT')
 # Display at the end of the email notification
 EMAIL_CLASSIFICATION = os.environ.get('EMAIL_CLASSIFICATION', 'Internal')
 # Website url, link in e-mails body
@@ -189,7 +190,7 @@ DATABASES = {
         'NAME': 'db_watcher',
         'USER': os.environ.get('DB_USER', 'watcher'),
         'PASSWORD': os.environ.get('DB_PASSWORD', 'Ee5kZm4fWWAmE9hs'),
-        'HOST': 'localhost',
+        'HOST': 'db_watcher',
         'PORT': '3306',
         'OPTIONS': {
             'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
