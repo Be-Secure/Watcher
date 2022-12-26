@@ -41,7 +41,6 @@ def create_observables(hive_api, case_id, site):
                                                                        tlp=2,
                                                                        ioc=True,
                                                                        sighted=True,
-                                                                       tags=['Watcher'],
                                                                        message='Domain name monitored'))
     if response.status_code == 201:
         print(str(timezone.now()) + " - " + "OK")
@@ -56,7 +55,6 @@ def create_observables(hive_api, case_id, site):
                                                                            tlp=2,
                                                                            ioc=True,
                                                                            sighted=True,
-                                                                           tags=['Watcher'],
                                                                            message='First IP'))
         if response.status_code == 201:
             print(str(timezone.now()) + " - " + "OK")
@@ -71,7 +69,6 @@ def create_observables(hive_api, case_id, site):
                                                                            tlp=2,
                                                                            ioc=True,
                                                                            sighted=True,
-                                                                           tags=['Watcher'],
                                                                            message='Second IP'))
         if response.status_code == 201:
             print(str(timezone.now()) + " - " + "OK")
@@ -86,7 +83,6 @@ def create_observables(hive_api, case_id, site):
                                                                            tlp=2,
                                                                            ioc=True,
                                                                            sighted=True,
-                                                                           tags=['Watcher'],
                                                                            message='Mail Server A record IP: mail.' + site.domain_name))
         if response.status_code == 201:
             print(str(timezone.now()) + " - " + "OK")
@@ -102,7 +98,6 @@ def create_observables(hive_api, case_id, site):
                                                                                tlp=2,
                                                                                ioc=True,
                                                                                sighted=True,
-                                                                               tags=['Watcher'],
                                                                                message='MX record'))
             if response.status_code == 201:
                 print(str(timezone.now()) + " - " + "OK")
@@ -130,7 +125,6 @@ def update_observables(hive_api, site):
                                                                            tlp=2,
                                                                            ioc=True,
                                                                            sighted=True,
-                                                                           tags=['Watcher'],
                                                                            message='First IP'))
         if response.status_code == 201:
             print(str(timezone.now()) + " - " + "OK")
@@ -147,7 +141,6 @@ def update_observables(hive_api, site):
                                                                            tlp=2,
                                                                            ioc=True,
                                                                            sighted=True,
-                                                                           tags=['Watcher'],
                                                                            message='Second IP'))
         if response.status_code == 201:
             print(str(timezone.now()) + " - " + "OK")
@@ -165,7 +158,6 @@ def update_observables(hive_api, site):
                                                                            tlp=2,
                                                                            ioc=True,
                                                                            sighted=True,
-                                                                           tags=['Watcher'],
                                                                            message='Mail Server A record IP: mail.' + site.domain_name))
         if response.status_code == 201:
             print(str(timezone.now()) + " - " + "OK")
@@ -185,7 +177,6 @@ def update_observables(hive_api, site):
                                                                                    tlp=2,
                                                                                    ioc=True,
                                                                                    sighted=True,
-                                                                                   tags=['Watcher'],
                                                                                    message='MX record'))
                 if response.status_code == 201:
                     print(str(timezone.now()) + " - " + "OK")

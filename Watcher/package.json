@@ -1,11 +1,11 @@
 {
   "name": "Watcher",
-  "version": "1.0.0",
+  "version": "1.2.8",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "webpack --mode development --watch ./Watcher/frontend/src/index.js --output ./Watcher/frontend/static/frontend/main.js",
-    "build": "webpack --mode production ./Watcher/frontend/src/index.js --output ./Watcher/frontend/static/frontend/main.js"
+    "dev": "webpack --mode development --watch ./Watcher/frontend/src/index.js --output-path ./Watcher/frontend/static/frontend/",
+    "build": "webpack --mode production ./Watcher/frontend/src/index.js --output-path ./Watcher/frontend/static/frontend/"
   },
   "keywords": [],
   "author": "",
@@ -25,7 +25,7 @@
     "chart.js": "^2.9.4",
     "css-loader": "^6.5.1",
     "jquery": "^3.6.0",
-    "moment": "^2.29.2",
+    "moment": "^2.29.4",
     "prop-types": "^15.7.2",
     "react": "^16.14.0",
     "react-alert": "^7.0.3",
